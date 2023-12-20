@@ -1,53 +1,53 @@
 ---
-manufacturer: samsung
+制造商：三星
 
 ---
 
-## What optimization apps does Samsung have?
+##三星有哪些优化应用程序？
 
-- **Android 11**: Battery optimization, Auto-optimize, Adaptive battery, Adaptive power-saving, Background restrictions, lists of Sleeping apps, Unused apps, Deep sleeping apps, Never sleeping apps
-- **Android Pie and higher**: Device care, Background restrictions, lists of Sleeping apps, Unused apps, Auto-disable unused apps
-- **Android Oreo and Nougat**: App power monitor, Background restrictions
-- **Android Marshmallow or below**: Smart manager
+- **Android11**：电池优化，自动优化，自适应电池，自适应节能，背景限制，睡眠应用列表，未使用应用，深度睡眠应用，从不睡眠应用
+- **Android派及更高版本**：设备保护、后台限制、睡眠应用列表、未使用的应用、自动禁用未使用的应用
+- **安卓奥利奥和牛轧糖**：应用程序电源监控，后台限制
+- **Android Marshmallow或更低版本**：智能管理器
 
-1. [ Android 13 ](#android-13) 
-2. [ Android 11 ](#android-11) <br>
-3. [ Android Pie and 10 ](#android-pie-and-10) <br>
-4. [ Android Oreo and Nougat ](#android-oreo-and-nougat) <br>
-5. [ Android Marshmallow and older ](#android-marshmallow-and-older ) <br>
-
-
-## Android 13
-
-The settings are mostly the same as Android 11 below, with a few changes:
-
-* The "Optimize battery usage" option doesn't exist anymore under "Special Access".
-* Under "Device Care" there is no "Automation" or "Advanced" option anymore.
-
-So the **existing options** to change would be:
-1. The per-app setting.
-2. Adaptive battery.
-3. Put unused apps to sleep.
-
-> The _"Put unused apps to sleep"_ option is the major headache we see on Samsung - a non-standard app-killing feature that isn't present in AOSP implemented only by Samsung which puts an app you did not use for X days to a mode with restricted background processing. On some releases, the period was short as 3 days. So if you did not use your alarm clock over the weekend your alarm would not ring.
+1. [Android13](#android-13) 
+2. [Android11](#android-11) <溴>
+3. [Android派和10](#android-pie-and-10) <溴>
+4. [安卓奥利奥和牛轧糖](#android-oreo-and-nougat) <溴>
+5. [Android Marshmallow及更早版本](#android-marshmallow-and-lder ) <溴>
 
 
+##Android13
 
-## Android 11
+这些设置与下面的Android11基本相同，仅有一些更改：
 
-On Android 11 Samsung will prevent apps work in background by default unless you exclude apps from battery optimizations. This is a severe divergence from standard Android process management policies.<br>
-Yes, this is a long way to go! Devs cannot ask for it automatically as they risk being kicked out from Play Store due to policy violations.
+*“Special Access”(特殊访问)下不再存在“优化电池使用”选项。
+*“设备维护”下不再有“自动化”或“高级”选项。
 
-### Lock the app in Recent
+所以**现有选项**要进行更改，请执行以下操作：
+1.每应用程序设置。
+2.自适应电池。
+3.将未使用的应用程序置于睡眠状态。
 
-1. Open Recent apps.<br>
-2. Find Your app.<br>
-3. Long-press the icon of the app.<br>
+>这_"将未使用的应用设为休眠"_选项是我们在三星上看到的最令人头疼的问题--一个非标准的应用程序扼杀功能，在仅三星实施的AOSP中不存在，它会将您X天未使用的应用程序置于具有受限后台处理的模式。在一些版本中，这个周期只有3天，所以如果你在周末不使用闹钟，你的闹钟就不会响。
 
 
-### Battery optimization
 
-To keep your apps working properly make sure you enable:<br>
+##Android11
+
+在Android11上，三星将默认阻止应用程序在后台工作，除非您将应用程序排除在电池优化之外。这与标准Android流程管理策略存在严重差异。<溴>
+是的，这是一个很长的路要走！开发人员不能自动要求它，因为他们有风险被踢出游戏商店由于违反策略。
+
+###锁定最近使用的应用程序
+
+1.打开最近使用的应用程序。<溴>
+2.查找您的应用程序。<溴>
+3.长按应用程序图标。<溴>
+
+
+###电池优化
+
+若要使应用程序正常工作，请确保启用：<溴>
 _Settings -> Apps -> Your App -> Battery -> Battery optimization -> All apps -> Your app -> Don't optimize_.<br>
 
 <div class="img-block">
